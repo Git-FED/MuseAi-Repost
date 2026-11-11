@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#05070d">
+  <title>Support — Muse AI Repost</title>
+  <link rel="icon" href="../assets/favicon.svg">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="site-pages.css">
+</head>
+<body class="inner-page support-page">
+  <div class="age-gate" id="ageGate" role="dialog" aria-modal="true" aria-labelledby="age-title">
+    <div class="age-gate-card">
+      <div class="page-kicker">PAYMENT ACCESS / 18+</div>
+      <h1 id="age-title">Before the relay.</h1>
+      <p>This support area contains paid subscriptions, donations, and third-party payment links. Please confirm that you are 18 or older to continue.</p>
+      <label class="age-check"><input type="checkbox" id="ageConfirm"> <span>I confirm that I am 18 or older.</span></label>
+      <div class="page-actions"><button class="button button-primary" id="enterSupport" type="button" disabled>Enter support <span>↗</span></button><a class="button button-quiet" href="../index.html">Return home</a></div>
+      <p class="age-note">This is an age self-confirmation, not identity verification. Payment processing is handled by the linked provider.</p>
+    </div>
+  </div>
+
+  <nav class="inner-nav"><a class="brand" href="../index.html"><img src="../assets/logo-mark.svg" alt=""> <span>MUSE <b>AI</b></span></a><a class="back-link" href="../index.html">← Home</a></nav>
+  <main class="page-wrap support-wrap">
+    <div class="page-kicker">SUPPORT THE RELAY / 04</div>
+    <h1>Keep the signal<br><em>moving.</em></h1>
+    <p class="lead">Choose a recurring subscription or a one-time donation. The options below are intentionally separated for clarity.</p>
+
+    <div class="support-tabs" role="tablist" aria-label="Support options">
+      <button class="support-tab is-active" id="subscription-tab" role="tab" aria-selected="true" aria-controls="subscription-panel">Subscription</button>
+      <button class="support-tab" id="donation-tab" role="tab" aria-selected="false" aria-controls="donation-panel">Donation</button>
+    </div>
+
+    <section class="support-panel is-active" id="subscription-panel" role="tabpanel" aria-labelledby="subscription-tab">
+      <div class="support-panel-head"><div><span class="support-label">RECURRING SUPPORT</span><h2>Subscribe to FedPromptly</h2><p>Use PayPal for the recurring plan or Stripe for the subscription checkout.</p></div><span class="support-orb">01</span></div>
+      <div class="payment-grid">
+        <article class="payment-card"><span class="payment-provider">PAYPAL</span><h3>Monthly relay support</h3><p>Secure recurring subscription through PayPal.</p><div id="paypal-button-container-P-4FD24238VX4902214NK2XP2Y" class="paypal-slot"><span class="payment-loading">Loading checkout…</span></div></article>
+        <article class="payment-card"><span class="payment-provider">STRIPE</span><h3>Card subscription</h3><p>Use the Stripe-hosted subscription button.</p><div id="stripe-subscription-slot" class="stripe-slot"><span class="payment-loading">Loading checkout…</span></div></article>
+      </div>
+    </section>
+
+    <section class="support-panel" id="donation-panel" role="tabpanel" aria-labelledby="donation-tab" hidden>
+      <div class="support-panel-head"><div><span class="support-label">ONE-TIME SUPPORT</span><h2>Send a clean signal</h2><p>Choose the payment rail that works best for you.</p></div><span class="support-orb support-orb-pink">02</span></div>
+      <div class="payment-grid donation-grid">
+        <article class="payment-card github-payment-card"><span class="payment-provider">GITHUB SPONSORS</span><h3>Sponsor Git-FED</h3><p>Support the project through GitHub Sponsors.</p><div class="gh-sponsor-card"><iframe src="https://github.com/sponsors/Git-FED/card" title="Sponsor Git-FED" width="600" height="225" frameborder="0" scrolling="no" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><noscript><a href="https://github.com/sponsors/Git-FED">Sponsor Git-FED on GitHub</a></noscript></div></article>
+        <article class="payment-card"><span class="payment-provider">PATREON</span><h3>Become a patron</h3><p>Support the relay through Patreon.</p><a class="external-pay patreon-pay" href="https://www.patreon.com/checkout/16145898/28759937?client_id=yieuxJary8ZL-f8_KU2x6CLgr8nrI8W61ttU1yzFIpPl4KhhtqsjGDWTKdh0e-gx&amp;state=05d4a8d93af762ab4aa99e75678389c6&amp;response_type=code&amp;amt=5.0&amp;pledge_insufficient=True&amp;redirect_uri=https%3A%2F%2Fwww.patreon.com%2Foauth2%2Fbecome-patron%3Fredirect_uri%3Dhttps%253A%252F%252Fgithub.com%252Fsponsors%252Faccounts%252Fpatreon%26client_id%3DyieuxJary8ZL-f8_KU2x6CLgr8nrI8W61ttU1yzFIpPl4KhhtqsjGDWTKdh0e-gx%26min_cents%3D500%26campaign_id%3D16145898%26response_type%3Dcode%26state%3D05d4a8d93af762ab4aa99e75678389c6%26scope%3Didentity%2Bidentity%255Bemail%255D%2Bcampaigns%2Bw%253Acampaigns.webhook%2Bcampaigns.members&amp;start_flow=become_patron&amp;scope=identity+identity%5Bemail%5D+campaigns+w%3Acampaigns.webhook%2Bcampaigns.members" target="_blank" rel="noreferrer noopener">Open Patreon checkout <span>↗</span></a></article>
+        <article class="payment-card"><span class="payment-provider">BUY ME A COFFEE</span><h3>Buy me a book</h3><p>A small one-time contribution for the relay.</p><a class="external-pay" href="https://www.buymeacoffee.com/fedpromptly" target="_blank" rel="noreferrer noopener"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a book&emoji=%F0%9F%93%96&slug=fedpromptly&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" alt="Buy me a book"></a></article>
+        <article class="payment-card"><span class="payment-provider">CRYPTO</span><h3>NOWPayments</h3><p>Donate with cryptocurrency or Bitcoin.</p><a class="external-pay crypto-pay" href="https://nowpayments.io/payment/?iid=5997958570&amp;source=button" target="_blank" rel="noreferrer noopener"><img src="https://nowpayments.io/images/embeds/payments-button-white.svg" alt="Cryptocurrency and Bitcoin payment button by NOWPayments"></a></article>
+      </div>
+    </section>
+
+    <p class="payment-disclaimer">Payment links open or load third-party checkout providers. Muse AI Repost does not store card details.</p>
+    <div class="page-actions"><a class="button button-primary" href="platform-rules.html">Read the rules <span>↗</span></a><a class="button button-quiet" href="how-it-works.html">How it works</a></div>
+  </main>
+
+  <script>
+    (() => {
+      const gate = document.getElementById('ageGate');
+      const check = document.getElementById('ageConfirm');
+      const enter = document.getElementById('enterSupport');
+      const tabs = [...document.querySelectorAll('.support-tab')];
+      const panels = [...document.querySelectorAll('.support-panel')];
+      let paymentsLoaded = false;
+
+      const showSupport = () => {
+        gate.classList.add('is-hidden');
+        document.body.classList.remove('age-locked');
+        if (!paymentsLoaded) loadPaymentProviders();
+      };
+      const loadScript = (src, onload) => {
+        const script = document.createElement('script');
+        script.src = src;
+        script.async = true;
+        script.onload = onload;
+        document.head.appendChild(script);
+      };
+      const loadPaymentProviders = () => {
+        paymentsLoaded = true;
+        loadScript('https://www.paypal.com/sdk/js?client-id=BAA_ndqaWMyQwTnDZ0LXwLQ22jdJo9uxkeXYqmBbF-hD41HMiZ83mvOcx1Kti0b6ZfXfje7Q1ievNaS8Ok&vault=true&intent=subscription', () => {
+          if (!window.paypal) return;
+          window.paypal.Buttons({
+            style: { shape: 'rect', color: 'gold', layout: 'vertical', label: 'subscribe' },
+            createSubscription: (data, actions) => actions.subscription.create({ plan_id: 'P-4FD24238VX4902214NK2XP2Y', quantity: 1 }),
+            onApprove: (data) => { const slot = document.getElementById('paypal-button-container-P-4FD24238VX4902214NK2XP2Y'); slot.dataset.approved = data.subscriptionID; alert('Subscription approved: ' + data.subscriptionID); }
+          }).render('#paypal-button-container-P-4FD24238VX4902214NK2XP2Y');
+        });
+        loadScript('https://js.stripe.com/v3/buy-button.js', () => {
+          const subscription = document.createElement('stripe-buy-button');
+          subscription.setAttribute('buy-button-id', 'buy_btn_1UJKaaJaRf233kfWKZ81fcIe');
+          subscription.setAttribute('publishable-key', 'pk_live_51UIdAGJaRf233kfWlFacR31IYVGdjCVAttNFzIgQGXQzrUdc894iJcBqamRZNwF11z2AN5kvjyzitor462f2egVI00UmKj0sd8');
+          document.getElementById('stripe-subscription-slot').replaceChildren(subscription);
+        });
+      };
+      check.addEventListener('change', () => { enter.disabled = !check.checked; });
+      enter.addEventListener('click', () => { if (!check.checked) return; sessionStorage.setItem('museSupportAgeConfirmed', 'true'); showSupport(); });
+      if (sessionStorage.getItem('museSupportAgeConfirmed') === 'true') showSupport(); else document.body.classList.add('age-locked');
+      tabs.forEach(tab => tab.addEventListener('click', () => {
+        tabs.forEach(item => { const active = item === tab; item.classList.toggle('is-active', active); item.setAttribute('aria-selected', String(active)); });
+        panels.forEach(panel => { const active = panel.id === tab.getAttribute('aria-controls'); panel.classList.toggle('is-active', active); panel.hidden = !active; });
+      }));
+    })();
+  </script>
+<footer class="fed-footer" aria-label="FED-OS footer"><div class="fed-footer-beam" aria-hidden="true"></div><div class="fed-footer-top"><div><div class="footer-kicker">FED-OS / PUBLIC RELAY</div><h2>Keep the signal moving.</h2><p>Explore the ecosystem, find the right support rail, and stay close to the community.</p></div><a class="footer-mark" href="../index.html" aria-label="Back to home">FED<span>●</span>OS</a></div><div class="footer-groups"><section><h3>FED-OS</h3><div class="footer-buttons"><a href="https://www.fedpromptly.org" target="_blank" rel="noopener noreferrer">Explore</a><a href="https://www.fedpromptly.com/aid" target="_blank" rel="noopener noreferrer">Membership</a><a href="https://www.jabburr.com/fed-os" target="_blank" rel="noopener noreferrer">Store</a><a href="https://whop.com/fedpromptly/" target="_blank" rel="noopener noreferrer">Whop</a></div></section><section><h3>Contact</h3><div class="footer-buttons"><a href="mailto:contact@fedpromptly.com">General</a><a href="mailto:support@fedpromptly.com">Support</a><a href="mailto:business@fedpromptly.com">Business</a><a href="mailto:careers@fedpromptly.com">Careers</a></div></section><section><h3>Media</h3><div class="footer-buttons"><a href="https://substack.com/@fedpromptly" target="_blank" rel="noopener noreferrer">Articles</a><a href="https://fedpromptly.wordpress.com/" target="_blank" rel="noopener noreferrer">Blog</a><a href="https://gitfed.substack.com/" target="_blank" rel="noopener noreferrer">GitFed Blog</a><a href="https://www.deviantart.com/fedpromptly" target="_blank" rel="noopener noreferrer">Artwork</a></div></section><section><h3>Community</h3><div class="footer-buttons"><a href="https://discord.gg/Jm4XStx4Pf" target="_blank" rel="noopener noreferrer">Developers</a><a href="https://bsky.app/profile/fed-os.bsky.social" target="_blank" rel="noopener noreferrer">Bluesky</a><a href="https://x.com/Fedpromptly" target="_blank" rel="noopener noreferrer">X / Ads</a><a href="private-communities.html">Private</a></div></section><section><h3>Support</h3><div class="footer-buttons"><a href="https://www.patreon.com/c/FEDpromptly" target="_blank" rel="noopener noreferrer">Patreon</a><a href="https://buymeacoffee.com/fedpromptly" target="_blank" rel="noopener noreferrer">Tips</a><a href="support.html">All support</a></div></section></div><div class="fed-footer-bottom"><span>PUBLIC LINKS / PRIVATE ROOMS GATED</span><span>© FED-OS</span></div></footer>
+</body>
+</html>
